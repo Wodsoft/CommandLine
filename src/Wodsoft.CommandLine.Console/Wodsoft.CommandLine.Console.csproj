@@ -4,6 +4,7 @@
     <TargetFramework>netstandard1.3</TargetFramework>
     <RootNamespace>Wodsoft.CommandLine</RootNamespace>
   </PropertyGroup>
+  <Import Project="../../common.props" />
 
   <ItemGroup>
     <PackageReference Include="System.Console" Version="4.3.0" />

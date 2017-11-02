@@ -5,13 +5,19 @@ VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E785ED59-59E0-48BB-9AEE-2C2943BCB819}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wodsoft.CommandLine", "src\Wodsoft.CommandLine\Wodsoft.CommandLine.csproj", "{039D011C-BBB2-4679-A73B-9818B786BBB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wodsoft.CommandLine", "src\Wodsoft.CommandLine\Wodsoft.CommandLine.csproj", "{039D011C-BBB2-4679-A73B-9818B786BBB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wodsoft.CommandLine.Console", "src\Wodsoft.CommandLine.Console\Wodsoft.CommandLine.Console.csproj", "{1BEF1575-761D-4F43-AC3C-AAA6D0872B67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wodsoft.CommandLine.Console", "src\Wodsoft.CommandLine.Console\Wodsoft.CommandLine.Console.csproj", "{1BEF1575-761D-4F43-AC3C-AAA6D0872B67}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{BCA659F5-0EC1-4DB3-8750-0BA2896A1B42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wodsoft.CommandLine.Test", "test\Wodsoft.CommandLine.Test\Wodsoft.CommandLine.Test.csproj", "{98D39203-70B9-4E84-A53B-8C41247E2D8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wodsoft.CommandLine.Test", "test\Wodsoft.CommandLine.Test\Wodsoft.CommandLine.Test.csproj", "{98D39203-70B9-4E84-A53B-8C41247E2D8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BF8E6665-0864-4067-A4E6-A84A51AAD80A}"
+	ProjectSection(SolutionItems) = preProject
+		common.props = common.props
+		LICENSE = LICENSE
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
