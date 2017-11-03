@@ -43,9 +43,9 @@ namespace Wodsoft.CommandLine
             foreach (var parameter in metadata.Parameters.Where(t => !t.IsDefault).OrderBy(t => t.Order))
             {
                 if (parameter.IsRequired)
-                    text += "[/" + parameter.Name + " " + parameter.Type.Name + "] ";
-                else
                     text += "</" + parameter.Name + " " + parameter.Type.Name + "> ";
+                else
+                    text += "[/" + parameter.Name + " " + parameter.Type.Name + "] ";
             }
             context.WriteLine(text);
         }
