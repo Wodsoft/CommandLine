@@ -9,8 +9,13 @@ namespace Wodsoft.CommandLine
         void Clear();
         void ResetColor();
         void Write(string text);
+        void WriteLine();
         void WriteLine(string text);
         void SetCursorPosition(int left, int top);
+
+        void WriteError(string text);
+        void WriteWarning(string text);
+        void WriteInformation(string text);
 
         int CursorLeft { get; }
         int CursorTop { get; }
