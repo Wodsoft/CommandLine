@@ -67,13 +67,13 @@ namespace Wodsoft.CommandLine
                 }
             }
 
-            if (metadata.Parameters.Where(t=>t.IsRequired).Any(t=>values.ContainsKey(t)))
+            if (metadata.Parameters.Where(t => t.IsRequired).Any(t => !values.ContainsKey(t)))
             {
                 CommandError?.Invoke(this, new CommandEventArgs(name, metadata));
                 return;
             }
             var cmd = Provider.GetCommand(name);
-            foreach(var kv in values)
+            foreach (var kv in values)
                 kv.Key.Setter(cmd, kv.Value);
             cmd.Invoke(Context);
             CommandCompleted?.Invoke(this, new CommandEventArgs(name, metadata, cmd));
